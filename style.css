@@ -1,0 +1,138 @@
+:root {
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(224, 223, 222);
+    --background-color: rgb(255, 255, 255);
+    --text-color: gold;
+
+}
+
+
+body {
+    background-color: ghostwhite;
+}
+
+
+header {
+    display: flex;
+    height: 30px;
+    background-color: #f4f4f4;
+    font-family: MyFont;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+
+nav {
+    display:contents;
+    font-family: serif;
+    font-size: 20px;
+    gap: 150px;
+    transition-duration: 0.4s;
+    cursor:pointer;
+    margin: 1px;
+
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 300vh;
+    background-color: var(--primary-color);
+
+
+}
+
+.square {
+    height: 250px;
+    width: 400px;
+    background-color: #f4f4f4;
+    position: relative;
+    bottom: 900px;
+    left:100px;
+
+}
+
+.ShopNow {
+   
+    height: 50px;
+    width: 150px;
+    background-color: rgb(0, 0, 0);
+     position: absolute;
+    left: 40px;
+    top: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.Plus span{
+    margin-left: 10px;
+    width: 0;
+    overflow: hidden;
+    transition: 0,4s;
+}
+
+.Plus:hover span {
+    width: 30px;
+}
+
+.ShopNow:hover{
+    border: rgb(147, 235, 255) solid 7px;
+}
+
+.AboutUs {
+    height: 50px;
+    width:100px;
+  position: absolute;
+    left: 220px;
+    top: 150px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size:x-large;
+}
+
+
+
+footer {
+    height: 100px;
+    background-color: var(--secondary-color);
+}
+
+section {
+    font-size: x-large
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: moveUp 0.5s linear forwards;
+
+}
+
+
+
+@keyframes moveUp {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url("cmunbi.woff");
+}
+
+
+
+
+
